@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cinema Unraveled</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>
-      <span class="top-line">CINEMA</span>
-      <span class="bottom-line">UNRAVELED</span>
-    </h1>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Cinema Unraveled</h1>
   </header>
 
-  <main>
-    <section class="gallery-container">
-      <div class="gallery-grid" id="movieGallery"></div>
+  <!-- Movie Poster Grid -->
+  <main class="movie-grid-wrapper">
+    <section class="movie-grid" id="movieGallery">
+      <!-- Movie posters will be inserted here via JS -->
     </section>
   </main>
 
+  <!-- Popup Review Modal -->
   <div class="popup" id="popup">
-    <div class="popup-content">
+    <div class="popup-content" id="popupContent">
       <span class="close" onclick="closePopup()">&times;</span>
-      <div id="movieDetails"></div>
+      <div id="movieDetails">
+        <!-- Dynamic review content appears here -->
+      </div>
     </div>
   </div>
 
