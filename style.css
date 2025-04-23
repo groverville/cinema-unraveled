@@ -1,102 +1,96 @@
-/* Base Reset */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+/* Global Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  background-color: #000;
-  font-family: 'Helvetica Neue', sans-serif;
-  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 20px;
+  line-height: 1.6;
 }
 
-/* Header */
-header {
+/* Hero Title */
+.hero {
+  background-color: #111;
+  border: 2px solid #FF3B30;
+  padding: 60px 30px;
   text-align: center;
-  margin-top: 3rem;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #FF3B30;
 }
 
-h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 5rem;
-  color: #FFD60A;
+.hero h1 {
+  font-size: 4rem;
   text-transform: uppercase;
-  position: relative;
-  line-height: 1.1;
-}
-
-.top-line, .bottom-line {
-  display: block;
-}
-
-.top-line {
-  font-size: 6rem;
+  font-weight: 600;
   color: #FFD60A;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0 #FF3B30;
 }
 
-.bottom-line {
-  font-size: 6rem;
-  color: #FFD60A;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #000;
+/* Main Movie Grid Container */
+.movie-grid-wrapper {
+  background-color: #ffffff;
+  border: 2px solid #111111;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #111111;
+  max-width: 1300px;
 }
 
-/* Gallery Container */
-.gallery-container {
-  margin: 4rem auto;
-  padding: 2rem;
-  max-width: 1200px;
-  background-color: #fff;
-  border-radius: 30px;
-}
-
-/* Gallery Grid */
-.gallery-grid {
+/* Movie Grid */
+.movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 24px;
   justify-items: center;
 }
 
-/* Poster Boxes */
-.gallery-grid img {
+.movie-grid img {
   width: 100%;
-  border-radius: 20px;
-  border: 4px solid #000;
+  border-radius: 16px;
+  border: 3px solid #111111;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease;
 }
 
-.gallery-grid img:hover {
+.movie-grid img:hover {
   transform: scale(1.05);
   border-color: #FF3B30;
 }
 
-/* Popup Modal */
+/* Popup Review Card */
 .popup {
   display: none;
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
 
 .popup-content {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 4px solid #FF3B30;
   width: 80%;
   max-width: 600px;
   position: relative;
+  box-shadow: 6px 6px 0 #111111;
 }
 
 .close {
@@ -106,4 +100,19 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   color: #FF3B30;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .movie-grid-wrapper {
+    padding: 20px;
+  }
+
+  .popup-content {
+    padding: 1rem;
+  }
 }
