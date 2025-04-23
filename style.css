@@ -1,45 +1,59 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
 
-/* Reset & Base */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Background Grid Overlay */
 body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: #000000;
   color: #ffffff;
   padding: 40px 20px;
   line-height: 1.6;
+  background-image: linear-gradient(#222222 1px, transparent 1px),
+                    linear-gradient(90deg, #222222 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); filter: drop-shadow(0 0 4px #FFD60A); }
-  50% { transform: scale(1.05); filter: drop-shadow(0 0 12px #FFD60A); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 4px #FFD60A); }
+/* Header */
+.header {
+  position: relative;
+  padding: 0 0 20px 0;
 }
 
 .logo {
-  max-width: 400px;
-  width: 90%;
+  width: 140px;
   height: auto;
+  border-radius: 16px;
   display: block;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 6px #FF3B30);
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.logo:hover {
-  animation: pulse 1.2s infinite ease-in-out;
+/* Intro Section */
+.intro-card {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 40px 30px;
+  border: 2px solid #111111;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 #111111;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.intro-card h1 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.intro-card p {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 /* Grid Container */
@@ -109,6 +123,10 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 600px) {
+  .intro-card {
+    padding: 30px 20px;
+  }
+
   .movie-grid-wrapper {
     padding: 20px;
   }
