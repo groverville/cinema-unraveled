@@ -2,31 +2,31 @@ const movies = [
   {
     title: "Inception",
     poster: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
-    review: "A masterclass in narrative complexity and visual storytelling.",
-    stars: 5
+    review: "Layer after layer, Chris Nolan drags you into a world of limitless imagination. With his usual ensamble, led by Leonardo DiCaprio at his peak, Nolan keeps audiences at the edge of their seats throughout the movie, and heavily discussing the ending. ",
+    stars: 4.5
   },
   {
     title: "The Grand Budapest Hotel",
     poster: "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
-    review: "Whimsical, stylish, and bursting with charm.",
+    review: "Vivid Colorscapes, whimsical music, and sharp writing bring together an amazing package of a movie. Wes Anderson delivers as he always does.",
     stars: 4.5
   },
   {
     title: "The Matrix",
     poster: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-    review: "Reality-bending brilliance that changed sci-fi forever.",
+    review: "Philisophical questions mixed with amazingly choreographed action. The Matrix was a movie that questioned the nature of our reality and asked questions that the majority of humans thought too abstract to ask",
     stars: 5
   },
   {
     title: "Parasite",
     poster: "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-    review: "A genre-defying masterpiece of class warfare.",
-    stars: 5
+    review: "Class differences mixed with a slight twinge of Horror, Parasite is a masterclass in writing",
+    stars: 4.5
   },
   {
     title: "Dune (2021)",
     poster: "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
-    review: "Visually stunning and atmospherically dense.",
+    review: "Denis V. does a FANTASTIC job bringing the scale of Frank Hubert's novel to life. You truly feel like you are viewing the Harkonnen infested universe that previous adaptions failed to capture.",
     stars: 4
   },
   {
@@ -38,7 +38,7 @@ const movies = [
   {
     title: "Pulp Fiction",
     poster: "https://image.tmdb.org/t/p/w500/dM2w364MScsjFf8pfMbaWUcWrR.jpg",
-    review: "Iconic, quotable, and endlessly stylish.",
+    review: "A rare example of well executed non-linear story telling",
     stars: 5
   },
   {
@@ -140,7 +140,7 @@ const movies = [
   {
     title: "Top Gun: Maverick",
     poster: "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
-    review: "Bigger, tighter, and thrilling to the last second.",
+    review: "A little generic, but really benefited by the updated technology of our times",
     stars: 4
   },
   {
